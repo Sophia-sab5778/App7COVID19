@@ -119,7 +119,7 @@ function resultPercentage() {
 </div>
 	
 <div id="content" class="w3-container"> <!--Indroduction of what the app does-->
-	<p>Are you unsure if you're experiencing a UTI or an STD? Answer a few short questions to find out if you need to get tested!</p>
+	<p>Are you unsure if you have COVID-19? Answer a few short questions to find out if you should get tested!</p>
 	
 	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>
 	<!--I inserted an image on the first page  of a patient consulting her docotor-->
@@ -136,9 +136,11 @@ function resultPercentage() {
 		<h1>Question 1</h1> 
 		
 	</div>
-	        <p>    Are you experiencing foul smelling urine?</p> <!--Added header-->
-		<a href="#two" onclick="UTIAdd();" class="w3-btn w3-black"> yes </a> <!-- added yes button for question 1-->
-		<a href="#two" onclick="chlamydiaAdd();" class="w3-btn w3-black"> no </a> <!-- added no button for question 1 -->
+	        <p>    How long have your symptoms been present?</p> <!--Added header-->
+		<a href="#two" onclick="coldAdd();" class="w3-btn w3-black"> Less than 14 days </a> <!-- added yes button for question 1-->
+		<a href="#two" onclick="covidAdd();" class="w3-btn w3-black"> 7-25 days </a> <!-- added no button for question 1 -->
+		<a href="#two" onclick="fluAdd();" class="w3-btn w3-black"> 7-14 days </a>
+		<a href="#two" onclick="allergyAdd();" class="w3-btn w3-black"> Several weeks </a>
 	</div>
 	
     	<div id="content" class="w3-container"> 
@@ -150,9 +152,11 @@ function resultPercentage() {
 		<h1>Question 2</h1>
 		
 	</div>
-	        <p>    Do you have any blisters in the gential area?</p> <!-- added question -->  
-		<a href="#three" onclick="chlamydiaAdd();"  class="w3-btn w3-black"> yes </a> <!-- added yes button for question 2, also added cold que -->
-		<a href="#three" onclick="UTIAdd();" class="w3-btn w3-black"> no </a> <!-- added no button for question 2, also added allergy que -->
+	        <p>    Do you have a cough?</p> <!-- added question -->  
+		<a href="#two" onclick="coldAdd();" class="w3-btn w3-black"> Yes, but it's very mild. </a> <!-- added yes button for question 1-->
+		<a href="#two" onclick="covidAdd();" class="w3-btn w3-black"> Yes, it's a bad dry cough. </a> <!-- added no button for question 1 -->
+		<a href="#two" onclick="fluAdd();" class="w3-btn w3-black"> Yes, it's a mild dry cough. </a>
+		<a href="#two" onclick="allergyAdd();" class="w3-btn w3-black"> No </a>
 	</div>
 	
 	<div id="content" class="w3-container">
@@ -166,8 +170,10 @@ function resultPercentage() {
 		
 	</div>
 	        <p>     Do you have a fever?</p> <!-- added question --> 
-		<a href="#four" onclick="chlamydiaAdd();"  class="w3-btn w3-black"> yes </a> <!-- added yes button for question 3, also added cold que; fixed que to move to page 3 -->
-		<a href="#four" onclick="UTIAdd();" class="w3-btn w3-black"> no </a> <!-- added no button for question 3, also added allergy que; fixed que to move to page 3 --> 
+		<a href="#two" onclick="coldAdd();" class="w3-btn w3-black"> Only for a short period. </a> <!-- added yes button for question 1-->
+		<a href="#two" onclick="covidAdd();" class="w3-btn w3-black"> Yes </a> <!-- added no button for question 1 -->
+		<a href="#two" onclick="fluAdd();" class="w3-btn w3-black"> 7-14 days </a>
+		<a href="#two" onclick="allergyAdd();" class="w3-btn w3-black"> Several weeks </a>
 	</div>
 	
 	<div id="content" class="w3-container">

@@ -66,17 +66,17 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		//This fuction adds 1 to cold value
 } 
 function resultPercentage() {
-	var coldPercentage = cold_count /6 *100; // multiply by 100 for probability
+	var coldPercentage = cold_count /11 *100; // multiply by 100 for probability
 	//alert(coldPercentage); // alert box for cold
-	var covidPercentage = covid_count /6 *100; // multiply by 100 for probability
+	var covidPercentage = covid_count /11 *100; // multiply by 100 for probability
 	//alert(covidPercentage); // alert box for covid
-	var fluPercentage = flu_count /6 *100; // multiply by 100 for probability
+	var fluPercentage = flu_count /11 *100; // multiply by 100 for probability
 	//alert(fluPercentage); // alert box for flu
-	var allergyPercentage = allergy_count /6 *100; // multiply by 100 for probability
+	var allergyPercentage = allergy_count /11 *100; // multiply by 100 for probability
 	//alert(allergyPercentage); // alert box for allergy
 	
 	var resultText = document.getElementById("results");
-	resultText.innerHTML = "Percent you have a cold! =" + cold_count /6 *100 + "<br> Percent you have COVID-19! =" + covid_count /6 *100 + "<br> Percent you have the flu! =" + flu_count /6 *100 + "<br> Percent you have allergies! =" + allergy_count /6 *100; 
+	resultText.innerHTML = "Percent you have a cold! =" + cold_count /11 *100 + "<br> Percent you have COVID-19! =" + covid_count /11 *100 + "<br> Percent you have the flu! =" + flu_count /11 *100 + "<br> Percent you have allergies! =" + allergy_count /11 *100; 
 	//Function shows results of probabilities
 	
 

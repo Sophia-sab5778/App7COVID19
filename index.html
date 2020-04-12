@@ -184,8 +184,10 @@ function resultPercentage() {
 		<h1>Question 4</h1>
 </div>
 	        <p>     Are you experiencing shortness of breath?</p> <!-- added question --> 
-		<a href="#five" onclick="coldAdd(); fluAdd(); allergyAdd();" class="w3-btn w3-black"> No </a> <!-- added yes button for question 1-->
+		
 		<a href="#five" onclick="covidAdd();" class="w3-btn w3-black"> Yes </a> <!-- added no button for question 1 -->
+		<a href="#five" onclick="coldAdd(); fluAdd(); allergyAdd();" class="w3-btn w3-black"> No </a> <!-- added yes button for question 1-->
+		
 		
 	</div>
 	
@@ -231,10 +233,9 @@ function resultPercentage() {
 		<h1>Question 7</h1>
 </div>
 	        <p>     Do you have a runny or stuffy nose?</p> <!-- added question --> 
-		<a href="#eight" onclick="coldAdd();" class="w3-btn w3-black"> Yes </a> 
-		<a href="#eight" onclick="covidAdd();" class="w3-btn w3-black"> No </a> 
-		<a href="#eight" onclick="fluAdd();" class="w3-btn w3-black"> No </a>
-		<a href="#eight" onclick="allergyAdd();" class="w3-btn w3-black"> Yes </a>
+		<a href="#eight" onclick="coldAdd(); allergyAdd();" class="w3-btn w3-black"> Yes </a> 
+		<a href="#eight" onclick="covidAdd(); fluAdd();" class="w3-btn w3-black"> No </a> 
+		
 	</div>
 	
     	<div id="content" class="w3-container">
@@ -277,8 +278,7 @@ function resultPercentage() {
 		<h1>Question 10</h1>
 </div>
 	        <p>     Are you feeling fatigued?</p> <!-- added question --> 
-		<a href="#eleven" onclick="coldAdd(); covidAdd(); allergyAdd();" class="w3-btn w3-black"> Maybe, but I would say its a main symptom.</a> 
-		<a href="#eleven" onclick="covidAdd();" class="w3-btn w3-black"> Maybe, but I would say its a main symptom. </a>
+		<a href="#eleven" onclick="coldAdd(); covidAdd(); allergyAdd();" class="w3-btn w3-black"> No/If I do, I wouldn't say its a main symptom.</a> 
 		<a href="#eleven" onclick="fluAdd();" class="w3-btn w3-black"> Yes </a>
 		
 	</div>

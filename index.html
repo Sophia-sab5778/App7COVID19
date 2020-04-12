@@ -38,26 +38,45 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
         var cold_count = 0; // UTI
         var covid_count = 0; //Cylamydia
+	var flu_count = 0;
+	var allergy_count = 0;
 
 
         function coldAdd(){ 
             cold_count = cold_count + 1;
 		//alert(cold_count); did not want alert
-//This fuction adds 1 to cold value
+		//This fuction adds 1 to cold value
 } 
+	
 	function covidAdd(){ // this function adds 1 to cold value
-      
             covid_count = covid_count + 1;
 		//alert(covid_count); did not want alert
-//This function adds 1 to covid value//
- }
+		//This function adds 1 to covid value//
+
+}
+	 function fluAdd(){ 
+            flu_count = flu_count + 1;
+		//alert(flu_count); did not want alert
+		//This fuction adds 1 to cold value
+} 
+	
+	function allergyAdd(){ 
+            allergy_count = allergy_count + 1;
+		//alert(allergy_count); did not want alert
+		//This fuction adds 1 to cold value
+} 
 function resultPercentage() {
 	var coldPercentage = cold_count /6 *100; // multiply by 100 for probability
 	//alert(coldPercentage); // alert box for cold
 	var covidPercentage = covid_count /6 *100; // multiply by 100 for probability
 	//alert(covidPercentage); // alert box for covid
+	var fluPercentage = flu_count /6 *100; // multiply by 100 for probability
+	//alert(fluPercentage); // alert box for flu
+	var allergyPercentage = allergy_count /6 *100; // multiply by 100 for probability
+	//alert(allergyPercentage); // alert box for allergy
+	
 	var resultText = document.getElementById("results");
-	resultText.innerHTML = "Percent you have a cold! =" + UTI_count /6 *100 + "<br> Percent you have chlamydia! If higher than 50%, you may want to get tested! =" + chlamydia_count /6 *100 ; 
+	resultText.innerHTML = "Percent you have a cold! =" + cold_count /6 *100 + "<br> Percent you have COVID-19! =" + covid_count /6 *100 + "<br> Percent you have the flu! =" + flu_count /6 *100 + "<br> Percent you have allergies! =" + allergy_count /6 *100; 
 	//Function shows results of probabilities
 	
 

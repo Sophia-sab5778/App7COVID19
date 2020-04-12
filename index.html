@@ -115,7 +115,7 @@ function resultPercentage() {
 
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
-	<h1>UTI or Chlamydia?</h1> <!--Header for first page-->
+	<h1>COVID-19</h1> <!--Header for first page-->
 </div>
 	
 <div id="content" class="w3-container"> <!--Indroduction of what the app does-->
@@ -137,8 +137,8 @@ function resultPercentage() {
 		
 	</div>
 	        <p>    How long have your symptoms been present?</p> <!--Added header-->
-		<a href="#two" onclick="coldAdd();" class="w3-btn w3-black"> Less than 14 days </a> <!-- added yes button for question 1-->
-		<a href="#two" onclick="covidAdd();" class="w3-btn w3-black"> 7-25 days </a> <!-- added no button for question 1 -->
+		<a href="#two" onclick="coldAdd();" class="w3-btn w3-black"> Less than 14 days </a> 
+		<a href="#two" onclick="covidAdd();" class="w3-btn w3-black"> 7-25 days </a> 
 		<a href="#two" onclick="fluAdd();" class="w3-btn w3-black"> 7-14 days </a>
 		<a href="#two" onclick="allergyAdd();" class="w3-btn w3-black"> Several weeks </a>
 	</div>
@@ -153,8 +153,8 @@ function resultPercentage() {
 		
 	</div>
 	        <p>    Do you have a cough?</p> <!-- added question -->  
-		<a href="#three" onclick="coldAdd();" class="w3-btn w3-black"> Yes, but it's very mild. </a> <!-- added yes button for question 1-->
-		<a href="#three" onclick="covidAdd(); "fluAdd();" class="w3-btn w3-black"> Yes, it's a dry cough. </a> <!-- added no button for question 1 -->
+		<a href="#three" onclick="coldAdd();" class="w3-btn w3-black"> Yes, but it's very mild. </a> 
+		<a href="#three" onclick="covidAdd(); fluAdd();" class="w3-btn w3-black"> Yes, it's a dry cough. </a> 
 		<a href="#three" onclick="allergyAdd();" class="w3-btn w3-black"> No </a>
 	</div>
 	
@@ -169,8 +169,8 @@ function resultPercentage() {
 		
 	</div>
 	        <p>     Do you have a fever?</p> <!-- added question --> 
-		<a href="#four" onclick="coldAdd();" class="w3-btn w3-black"> Only for a short period. </a> <!-- added yes button for question 1-->
-		<a href="#four" onclick="covidAdd(); fluAdd();" class="w3-btn w3-black"> Yes </a> <!-- added no button for question 1 -->
+		<a href="#four" onclick="coldAdd();" class="w3-btn w3-black"> Only for a short period of time </a> 
+		<a href="#four" onclick="covidAdd(); fluAdd();" class="w3-btn w3-black"> Yes </a> 
 		<a href="#four" onclick="allergyAdd();" class="w3-btn w3-black"> No </a>
 	</div>
 	
@@ -185,12 +185,12 @@ function resultPercentage() {
 </div>
 	        <p>     Are you experiencing shortness of breath?</p> <!-- added question --> 
 		<a href="#five" onclick="coldAdd(); fluAdd(); allergyAdd();" class="w3-btn w3-black"> No </a> <!-- added yes button for question 1-->
-		<a href="#five" onclick="covidAdd();" class="w3-btn w3-black"> Sometimes </a> <!-- added no button for question 1 -->
+		<a href="#five" onclick="covidAdd();" class="w3-btn w3-black"> Yes </a> <!-- added no button for question 1 -->
 		
 	</div>
 	
     	<div id="content" class="w3-container">
-        <p></p> <!-- deleted "question 1 here -->     
+        <p></p>   
     	</div>
 </div>
 
@@ -200,10 +200,10 @@ function resultPercentage() {
 		<h1>Question 5</h1>
 </div>
 	        <p>     Do you have a headache?</p> <!-- added question --> 
-		<a href="#six" onclick="coldAdd();" class="w3-btn w3-black"> Maybe, but I wouldn't say its a main symptom. </a> <!-- added yes button for question 1-->
-		<a href="#six" onclick="covidAdd();" class="w3-btn w3-black"> No </a> <!-- added no button for question 1 -->
+		<a href="#six" onclick="coldAdd();" class="w3-btn w3-black"> Maybe, but I wouldn't say its a main symptom. </a> 
+		<a href="#six" onclick="covidAdd();" class="w3-btn w3-black"> No </a> 
 		<a href="#six" onclick="fluAdd();" class="w3-btn w3-black"> Yes </a>
-		<a href="#six" onclick="allergyAdd();" class="w3-btn w3-black"> Yes, from sinus pressure </a>
+		<a href="#six" onclick="allergyAdd();" class="w3-btn w3-black"> Yes, but mainly from sinus pressure </a>
 	</div>
 	
     	<div id="content" class="w3-container">
@@ -212,12 +212,12 @@ function resultPercentage() {
 </div>
 
 <div class="page" id="six"> 
-	<div id="header" class="w3-container w3-flat-carrot"> <!-- delted portion that wasnt suppose to be there, also added id="header" -->
+	<div id="header" class="w3-container w3-flat-carrot"> 
 		<h1>Question 6</h1>
 </div>
 	        <p>     Are you sneezing?</p> <!-- added question --> 
-		<a href="#seven" onclick="coldAdd(); allergyAdd();" class="w3-btn w3-black"> Yes </a> <!-- added yes button for question 1-->
-		<a href="#seven" onclick="covidAdd(); fluAdd();" class="w3-btn w3-black"> No </a> <!-- added no button for question 1 -->
+		<a href="#seven" onclick="coldAdd(); allergyAdd();" class="w3-btn w3-black"> Yes </a> 
+		<a href="#seven" onclick="covidAdd(); fluAdd();" class="w3-btn w3-black"> No </a> 
 		
 	</div>
 	
@@ -227,12 +227,12 @@ function resultPercentage() {
 </div>
 
 <div class="page" id="seven"> 
-	<div id="header" class="w3-container w3-flat-carrot"> <!-- delted portion that wasnt suppose to be there, also added id="header" -->
+	<div id="header" class="w3-container w3-flat-carrot"> 
 		<h1>Question 7</h1>
 </div>
 	        <p>     Do you have a runny or stuffy nose?</p> <!-- added question --> 
-		<a href="#eight" onclick="coldAdd();" class="w3-btn w3-black"> Yes </a> <!-- added yes button for question 1-->
-		<a href="#eight" onclick="covidAdd();" class="w3-btn w3-black"> No </a> <!-- added no button for question 1 -->
+		<a href="#eight" onclick="coldAdd();" class="w3-btn w3-black"> Yes </a> 
+		<a href="#eight" onclick="covidAdd();" class="w3-btn w3-black"> No </a> 
 		<a href="#eight" onclick="fluAdd();" class="w3-btn w3-black"> No </a>
 		<a href="#eight" onclick="allergyAdd();" class="w3-btn w3-black"> Yes </a>
 	</div>
@@ -243,12 +243,12 @@ function resultPercentage() {
 </div>
 
 <div class="page" id="eight"> 
-	<div id="header" class="w3-container w3-flat-carrot"> <!-- delted portion that wasnt suppose to be there, also added id="header" -->
+	<div id="header" class="w3-container w3-flat-carrot"> 
 		<h1>Question 8</h1>
 </div>
 	        <p>     Do you have a sore throat?</p> <!-- added question --> 
-		<a href="#nine" onclick="coldAdd();" class="w3-btn w3-black"> Yes </a> <!-- added yes button for question 1-->
-		<a href="#nine" onclick="covidAdd(); fluAdd();" class="w3-btn w3-black"> Maybe, but I wouldn't say its a main symptom. </a> <!-- added no button for question 1 -->
+		<a href="#nine" onclick="coldAdd();" class="w3-btn w3-black"> Yes </a> 
+		<a href="#nine" onclick="covidAdd(); fluAdd();" class="w3-btn w3-black"> Maybe, but I wouldn't say its a main symptom. </a> 
 		<a href="#nine" onclick="allergyAdd();" class="w3-btn w3-black"> Yes, but very mild. </a>
 	</div>
 	
@@ -258,12 +258,12 @@ function resultPercentage() {
 </div>
 
 <div class="page" id="nine"> 
-	<div id="header" class="w3-container w3-flat-carrot"> <!-- delted portion that wasnt suppose to be there, also added id="header" -->
+	<div id="header" class="w3-container w3-flat-carrot"> 
 		<h1>Question 9</h1>
 </div>
 	        <p>     Are yoy experiencing diarrhea?</p> <!-- added question --> 
-		<a href="#ten" onclick="coldAdd(); allergyAdd();" class="w3-btn w3-black"> No </a> <!-- added yes button for question 1-->
-		<a href="#ten" onclick="covidAdd();" class="w3-btn w3-black"> Maybe, but I wouldn't say its a main symptom. </a> <!-- added no button for question 1 -->
+		<a href="#ten" onclick="coldAdd(); allergyAdd();" class="w3-btn w3-black"> No </a> 
+		<a href="#ten" onclick="covidAdd();" class="w3-btn w3-black"> Maybe, but I wouldn't say its a main symptom. </a> 
 		<a href="#ten" onclick="fluAdd();" class="w3-btn w3-black"> Yes, but I'm a child under 12 years. </a>
 	</div>
 	
@@ -273,24 +273,23 @@ function resultPercentage() {
 </div>
 
 <div class="page" id="ten"> 
-	<div id="header" class="w3-container w3-flat-carrot"> <!-- delted portion that wasnt suppose to be there, also added id="header" -->
+	<div id="header" class="w3-container w3-flat-carrot"> 
 		<h1>Question 10</h1>
 </div>
 	        <p>     Are you feeling fatigued?</p> <!-- added question --> 
-		<a href="#eleven" onclick="coldAdd(); covidAdd(); allergyAdd();" class="w3-btn w3-black"> Maybe, but I would say its a main symptom.</a> <!-- added yes button for question 1-->
-		<a href="#eleven" onclick="covidAdd();" class="w3-btn w3-black"> Maybe, but I would say its a main symptom. </a> <!-- added no button for question 1 -->
+		<a href="#eleven" onclick="coldAdd(); covidAdd(); allergyAdd();" class="w3-btn w3-black"> Maybe, but I would say its a main symptom.</a> 
+		<a href="#eleven" onclick="covidAdd();" class="w3-btn w3-black"> Maybe, but I would say its a main symptom. </a>
 		<a href="#eleven" onclick="fluAdd();" class="w3-btn w3-black"> Yes </a>
 		
 	</div>
 </div>
 
 <div class="page" id="eleven"> 
-	<div id="header" class="w3-container w3-flat-carrot"> <!-- delted portion that wasnt suppose to be there, also added id="header" -->
-		<h1>Question 11</h1>
+	<div id="header" class="w3-container w3-flat-carrot"> 
 </div>
 	        <p>     Are you experiencing body aches/pains?</p> <!-- added question --> 
-		<a href="#twelve" onclick="coldAdd(); fluAdd();" class="w3-btn w3-black"> Yes </a> <!-- added yes button for question 1-->
-		<a href="#twelve" onclick="covidAdd();" class="w3-btn w3-black"> Maybe, but I would say its a main symptom </a> <!-- added no button for question 1 -->
+		<a href="#twelve" onclick="coldAdd(); fluAdd();" class="w3-btn w3-black"> Yes </a> 
+		<a href="#twelve" onclick="covidAdd();" class="w3-btn w3-black"> Maybe, but I would say its a main symptom </a> 
 		<a href="#twelve" onclick="allergyAdd();" class="w3-btn w3-black"> No </a>
 	</div>
 	
@@ -304,7 +303,7 @@ function resultPercentage() {
 		
 	</div>
 	      
-		<a href="#eight" onclick="resultPercentage();" class="w3-btn w3-black">   Click here for results.   </a> <!-- added results button-->
+		<a href="#thirteen" onclick="resultPercentage();" class="w3-btn w3-black">   Click here for results.   </a> <!-- added results button-->
 		
 	</div>
 	
@@ -313,7 +312,7 @@ function resultPercentage() {
     	</div>
 </div>
 
-<div class="page" id="eight"> <!-- this produces the results page-->
+<div class="page" id="thirteen"> <!-- this produces the results page-->
 	<div id="header" class="w3-container w3-flat-carrot"> <!-- Produces header in orange color and results title -->
 		<h1>Results</h1>
 	</div>

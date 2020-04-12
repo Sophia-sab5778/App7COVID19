@@ -36,8 +36,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
        alert("This file last modified  " + docMod);
        console.log("This file last modified  " + docMod);
 
-        var cold_count = 0; // UTI
-        var covid_count = 0; //Cylamydia
+        var cold_count = 0; // establishes variables
+        var covid_count = 0; 
 	var flu_count = 0;
 	var allergy_count = 0;
 
@@ -57,13 +57,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	 function fluAdd(){ 
             flu_count = flu_count + 1;
 		//alert(flu_count); did not want alert
-		//This fuction adds 1 to cold value
+		//This fuction adds 1 to flu value
 } 
 	
 	function allergyAdd(){ 
             allergy_count = allergy_count + 1;
 		//alert(allergy_count); did not want alert
-		//This fuction adds 1 to cold value
+		//This fuction adds 1 to allergy value
 } 
 function resultPercentage() {
 	var coldPercentage = cold_count /11 *100; // multiply by 100 for probability
@@ -137,7 +137,7 @@ function resultPercentage() {
 		
 	</div>
 	        <p>    How long have your symptoms been present?</p> <!--Added header-->
-		<a href="#two" onclick="coldAdd();" class="w3-btn w3-black"> Less than 14 days </a> 
+		<a href="#two" onclick="coldAdd();" class="w3-btn w3-black"> Less than 14 days </a> <!--Buttons for all options-->
 		<a href="#two" onclick="covidAdd();" class="w3-btn w3-black"> 7-25 days </a> 
 		<a href="#two" onclick="fluAdd();" class="w3-btn w3-black"> 7-14 days </a>
 		<a href="#two" onclick="allergyAdd();" class="w3-btn w3-black"> Several weeks </a>

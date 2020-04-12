@@ -153,14 +153,13 @@ function resultPercentage() {
 		
 	</div>
 	        <p>    Do you have a cough?</p> <!-- added question -->  
-		<a href="#two" onclick="coldAdd();" class="w3-btn w3-black"> Yes, but it's very mild. </a> <!-- added yes button for question 1-->
-		<a href="#two" onclick="covidAdd();" class="w3-btn w3-black"> Yes, it's a dry cough. </a> <!-- added no button for question 1 -->
-		<a href="#two" onclick="fluAdd();" class="w3-btn w3-black"> Yes, it's a mild dry cough. </a>
-		<a href="#two" onclick="allergyAdd();" class="w3-btn w3-black"> No </a>
+		<a href="#three" onclick="coldAdd();" class="w3-btn w3-black"> Yes, but it's very mild. </a> <!-- added yes button for question 1-->
+		<a href="#three" onclick="covidAdd(); "fluAdd();" class="w3-btn w3-black"> Yes, it's a dry cough. </a> <!-- added no button for question 1 -->
+		<a href="#three" onclick="allergyAdd();" class="w3-btn w3-black"> No </a>
 	</div>
 	
 	<div id="content" class="w3-container">
-	<p></p> <!-- deleted "question 2 here --> 
+	<p></p> 
 	</div>
 </div>
 	
@@ -170,10 +169,9 @@ function resultPercentage() {
 		
 	</div>
 	        <p>     Do you have a fever?</p> <!-- added question --> 
-		<a href="#two" onclick="coldAdd();" class="w3-btn w3-black"> Only for a short period. </a> <!-- added yes button for question 1-->
-		<a href="#two" onclick="covidAdd();" class="w3-btn w3-black"> Yes </a> <!-- added no button for question 1 -->
-		<a href="#two" onclick="fluAdd();" class="w3-btn w3-black"> 7-14 days </a>
-		<a href="#two" onclick="allergyAdd();" class="w3-btn w3-black"> Several weeks </a>
+		<a href="#four" onclick="coldAdd();" class="w3-btn w3-black"> Only for a short period. </a> <!-- added yes button for question 1-->
+		<a href="#four" onclick="covidAdd(); fluAdd();" class="w3-btn w3-black"> Yes </a> <!-- added no button for question 1 -->
+		<a href="#four" onclick="allergyAdd();" class="w3-btn w3-black"> No </a>
 	</div>
 	
 	<div id="content" class="w3-container">
@@ -186,10 +184,9 @@ function resultPercentage() {
 		<h1>Question 4</h1>
 </div>
 	        <p>     Are you experiencing shortness of breath?</p> <!-- added question --> 
-		<a href="#two" onclick="coldAdd();" class="w3-btn w3-black"> No </a> <!-- added yes button for question 1-->
-		<a href="#two" onclick="covidAdd();" class="w3-btn w3-black"> Sometimes </a> <!-- added no button for question 1 -->
-		<a href="#two" onclick="fluAdd();" class="w3-btn w3-black"> No </a>
-		<a href="#two" onclick="allergyAdd();" class="w3-btn w3-black"> No </a>
+		<a href="#five" onclick="coldAdd(); fluAdd(); allergyAdd();" class="w3-btn w3-black"> No </a> <!-- added yes button for question 1-->
+		<a href="#five" onclick="covidAdd();" class="w3-btn w3-black"> Sometimes </a> <!-- added no button for question 1 -->
+		
 	</div>
 	
     	<div id="content" class="w3-container">
@@ -202,9 +199,11 @@ function resultPercentage() {
 		
 		<h1>Question 5</h1>
 </div>
-	        <p>     Do you have an increased urgency to urinate?</p> <!-- added question --> 
-		<a href="#six" onclick="UTIAdd();" class="w3-btn w3-black"> yes </a> <!-- added yes button for question 5 -->
-		<a href="#six" onclick="chlamydiaAdd();" class="w3-btn w3-black"> no </a> <!-- added no button for question 5-->
+	        <p>     Do you have a headache?</p> <!-- added question --> 
+		<a href="#six" onclick="coldAdd();" class="w3-btn w3-black"> Maybe, but I wouldn't say its a main symptom. </a> <!-- added yes button for question 1-->
+		<a href="#six" onclick="covidAdd();" class="w3-btn w3-black"> No </a> <!-- added no button for question 1 -->
+		<a href="#six" onclick="fluAdd();" class="w3-btn w3-black"> Yes </a>
+		<a href="#six" onclick="allergyAdd();" class="w3-btn w3-black"> Yes, from sinus pressure </a>
 	</div>
 	
     	<div id="content" class="w3-container">
@@ -217,10 +216,9 @@ function resultPercentage() {
 		<h1>Question 6</h1>
 </div>
 	        <p>     Are you sneezing?</p> <!-- added question --> 
-		<a href="#two" onclick="coldAdd();" class="w3-btn w3-black"> Yes </a> <!-- added yes button for question 1-->
-		<a href="#two" onclick="covidAdd();" class="w3-btn w3-black"> No </a> <!-- added no button for question 1 -->
-		<a href="#two" onclick="fluAdd();" class="w3-btn w3-black"> No </a>
-		<a href="#two" onclick="allergyAdd();" class="w3-btn w3-black"> Yes </a>
+		<a href="#seven" onclick="coldAdd(); allergyAdd();" class="w3-btn w3-black"> Yes </a> <!-- added yes button for question 1-->
+		<a href="#seven" onclick="covidAdd(); fluAdd();" class="w3-btn w3-black"> No </a> <!-- added no button for question 1 -->
+		
 	</div>
 	
     	<div id="content" class="w3-container">
@@ -233,10 +231,10 @@ function resultPercentage() {
 		<h1>Question 7</h1>
 </div>
 	        <p>     Do you have a runny or stuffy nose?</p> <!-- added question --> 
-		<a href="#two" onclick="coldAdd();" class="w3-btn w3-black"> Yes </a> <!-- added yes button for question 1-->
-		<a href="#two" onclick="covidAdd();" class="w3-btn w3-black"> No </a> <!-- added no button for question 1 -->
-		<a href="#two" onclick="fluAdd();" class="w3-btn w3-black"> No </a>
-		<a href="#two" onclick="allergyAdd();" class="w3-btn w3-black"> Yes </a>
+		<a href="#eight" onclick="coldAdd();" class="w3-btn w3-black"> Yes </a> <!-- added yes button for question 1-->
+		<a href="#eight" onclick="covidAdd();" class="w3-btn w3-black"> No </a> <!-- added no button for question 1 -->
+		<a href="#eight" onclick="fluAdd();" class="w3-btn w3-black"> No </a>
+		<a href="#eight" onclick="allergyAdd();" class="w3-btn w3-black"> Yes </a>
 	</div>
 	
     	<div id="content" class="w3-container">
@@ -249,10 +247,9 @@ function resultPercentage() {
 		<h1>Question 8</h1>
 </div>
 	        <p>     Do you have a sore throat?</p> <!-- added question --> 
-		<a href="#two" onclick="coldAdd();" class="w3-btn w3-black"> Yes </a> <!-- added yes button for question 1-->
-		<a href="#two" onclick="covidAdd();" class="w3-btn w3-black"> Maybe, but I would say its a main symptom. </a> <!-- added no button for question 1 -->
-		<a href="#two" onclick="fluAdd();" class="w3-btn w3-black"> Maybe, but I would say its a main symptom. </a>
-		<a href="#two" onclick="allergyAdd();" class="w3-btn w3-black"> yes, but very mild. </a>
+		<a href="#nine" onclick="coldAdd();" class="w3-btn w3-black"> Yes </a> <!-- added yes button for question 1-->
+		<a href="#nine" onclick="covidAdd(); fluAdd();" class="w3-btn w3-black"> Maybe, but I wouldn't say its a main symptom. </a> <!-- added no button for question 1 -->
+		<a href="#nine" onclick="allergyAdd();" class="w3-btn w3-black"> Yes, but very mild. </a>
 	</div>
 	
     	<div id="content" class="w3-container">
@@ -264,11 +261,10 @@ function resultPercentage() {
 	<div id="header" class="w3-container w3-flat-carrot"> <!-- delted portion that wasnt suppose to be there, also added id="header" -->
 		<h1>Question 9</h1>
 </div>
-	        <p>     Do you have a sore throat?</p> <!-- added question --> 
-		<a href="#two" onclick="coldAdd();" class="w3-btn w3-black"> Yes </a> <!-- added yes button for question 1-->
-		<a href="#two" onclick="covidAdd();" class="w3-btn w3-black"> Maybe, but I would say its a main symptom. </a> <!-- added no button for question 1 -->
-		<a href="#two" onclick="fluAdd();" class="w3-btn w3-black"> Maybe, but I would say its a main symptom. </a>
-		<a href="#two" onclick="allergyAdd();" class="w3-btn w3-black"> Yes, but very mild. </a>
+	        <p>     Are yoy experiencing diarrhea?</p> <!-- added question --> 
+		<a href="#ten" onclick="coldAdd(); allergyAdd();" class="w3-btn w3-black"> No </a> <!-- added yes button for question 1-->
+		<a href="#ten" onclick="covidAdd();" class="w3-btn w3-black"> Maybe, but I wouldn't say its a main symptom. </a> <!-- added no button for question 1 -->
+		<a href="#ten" onclick="fluAdd();" class="w3-btn w3-black"> Yes, but I'm a child under 12 years. </a>
 	</div>
 	
     	<div id="content" class="w3-container">
@@ -281,48 +277,28 @@ function resultPercentage() {
 		<h1>Question 10</h1>
 </div>
 	        <p>     Are you feeling fatigued?</p> <!-- added question --> 
-		<a href="#two" onclick="coldAdd();" class="w3-btn w3-black"> Maybe, but I would say its a main symptom.</a> <!-- added yes button for question 1-->
-		<a href="#two" onclick="covidAdd();" class="w3-btn w3-black"> Maybe, but I would say its a main symptom. </a> <!-- added no button for question 1 -->
-		<a href="#two" onclick="fluAdd();" class="w3-btn w3-black"> Yes </a>
-		<a href="#two" onclick="allergyAdd();" class="w3-btn w3-black"> Maybe, but I would say its a main symptom. </a>
+		<a href="#eleven" onclick="coldAdd(); covidAdd(); allergyAdd();" class="w3-btn w3-black"> Maybe, but I would say its a main symptom.</a> <!-- added yes button for question 1-->
+		<a href="#eleven" onclick="covidAdd();" class="w3-btn w3-black"> Maybe, but I would say its a main symptom. </a> <!-- added no button for question 1 -->
+		<a href="#eleven" onclick="fluAdd();" class="w3-btn w3-black"> Yes </a>
+		
 	</div>
 </div>
 
-<div class="page" id="six"> 
+<div class="page" id="eleven"> 
 	<div id="header" class="w3-container w3-flat-carrot"> <!-- delted portion that wasnt suppose to be there, also added id="header" -->
-		<h1>Question 6</h1>
+		<h1>Question 11</h1>
 </div>
-	        <p>     Do you have a sore throat?</p> <!-- added question --> 
-		<a href="#two" onclick="coldAdd();" class="w3-btn w3-black"> Yes </a> <!-- added yes button for question 1-->
-		<a href="#two" onclick="covidAdd();" class="w3-btn w3-black"> Maybe, but I would say its a main symptom. </a> <!-- added no button for question 1 -->
-		<a href="#two" onclick="fluAdd();" class="w3-btn w3-black"> Maybe, but I would say its a main symptom. </a>
-		<a href="#two" onclick="allergyAdd();" class="w3-btn w3-black"> yes, but very mild. </a>
+	        <p>     Are you experiencing body aches/pains?</p> <!-- added question --> 
+		<a href="#twelve" onclick="coldAdd(); fluAdd();" class="w3-btn w3-black"> Yes </a> <!-- added yes button for question 1-->
+		<a href="#twelve" onclick="covidAdd();" class="w3-btn w3-black"> Maybe, but I would say its a main symptom </a> <!-- added no button for question 1 -->
+		<a href="#twelve" onclick="allergyAdd();" class="w3-btn w3-black"> No </a>
 	</div>
 	
     	<div id="content" class="w3-container">
         <p></p>   
     	</div>
-</div>
 
-<div class="page" id="six"> 
-	<div id="header" class="w3-container w3-flat-carrot"> <!-- delted portion that wasnt suppose to be there, also added id="header" -->
-		<h1>Question 6</h1>
-</div>
-	        <p>     Do you have a sore throat?</p> <!-- added question --> 
-		<a href="#two" onclick="coldAdd();" class="w3-btn w3-black"> Yes </a> <!-- added yes button for question 1-->
-		<a href="#two" onclick="covidAdd();" class="w3-btn w3-black"> Maybe, but I would say its a main symptom. </a> <!-- added no button for question 1 -->
-		<a href="#two" onclick="fluAdd();" class="w3-btn w3-black"> Maybe, but I would say its a main symptom. </a>
-		<a href="#two" onclick="allergyAdd();" class="w3-btn w3-black"> yes, but very mild. </a>
-	</div>
-	
-    	<div id="content" class="w3-container">
-        <p></p>   
-    	</div>
-	
-    	<div id="content" class="w3-container">
-        <p></p>   
-    	</div>
-<div class="page" id="seven"> <!-- added page for results-->
+<div class="page" id="twelve"> <!-- added page for results-->
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Results</h1>
 		

@@ -15,7 +15,7 @@ Research Educator:
 Timothy Riedel
 triedel@utexas.edu
  
-Brief Description of Goal of Code: To tally the symptoms of a UTI vs. chalmydia and calculate the probablity of having each.
+Brief Description of Goal of Code: To tally the symptoms of a cold vs. COVID 19 and calculate the probablity of having each.
  
 Known Issues: None
 https://www.w3schools.com/w3css/default.asp
@@ -32,32 +32,32 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <script>
 	// The following code lets you know when the file was last modified. I commented it out b/c I did not want alert.
-    //   var docMod = document.lastModified;
-   //    alert("This file last modified  " + docMod);
-  //     console.log("This file last modified  " + docMod);
+       var docMod = document.lastModified;
+       alert("This file last modified  " + docMod);
+       console.log("This file last modified  " + docMod);
 
-        var UTI_count = 0; //Established variables
-        var chlamydia_count = 0;
+        var cold_count = 0; // UTI
+        var covid_count = 0; //Cylamydia
 
 
-        function UTIAdd(){ 
-            UTI_count = UTI_count + 1;
-		//alert(UTI_count); did not want alert
-//This fuction adds 1 to UTI value
+        function coldAdd(){ 
+            cold_count = cold_count + 1;
+		//alert(cold_count); did not want alert
+//This fuction adds 1 to cold value
 } 
-	function chlamydiaAdd(){ // this function adds 1 to cold value
+	function covidAdd(){ // this function adds 1 to cold value
       
-            chlamydia_count = chlamydia_count + 1;
-		//alert(chlamydia_count); did not want alert
-//This function adds 1 to chlamydia value//
+            covid_count = covid_count + 1;
+		//alert(covid_count); did not want alert
+//This function adds 1 to covid value//
  }
 function resultPercentage() {
-	var UTIPercentage = UTI_count /6 *100; // multiply by 100 for probability
-	//alert(UTIPercentage); // alert box for UTI
-	var chlamydiaPercentage = chlamydia_count /6 *100; // multiply by 100 for probability
-	//alert(chlamydiaPercentage); // alert box for chlamydia
+	var coldPercentage = cold_count /6 *100; // multiply by 100 for probability
+	//alert(coldPercentage); // alert box for cold
+	var covidPercentage = covid_count /6 *100; // multiply by 100 for probability
+	//alert(covidPercentage); // alert box for covid
 	var resultText = document.getElementById("results");
-	resultText.innerHTML = "Percent you have a UTI! =" + UTI_count /6 *100 + "<br> Percent you have chlamydia! =" + chlamydia_count /6 *100 ; 
+	resultText.innerHTML = "Percent you have a cold! =" + UTI_count /6 *100 + "<br> Percent you have chlamydia! If higher than 50%, you may want to get tested! =" + chlamydia_count /6 *100 ; 
 	//Function shows results of probabilities
 	
 

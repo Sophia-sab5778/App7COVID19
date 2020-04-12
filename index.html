@@ -6,7 +6,6 @@ THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
  
  
 Authors in chronological order of contribution:
-Tim Riedel
 Sophia Broadhurst
  
 Further Information:
@@ -16,9 +15,9 @@ Research Educator:
 Timothy Riedel
 triedel@utexas.edu
  
-Brief Description of Goal of Code: To count the symtpoms of a cold or allergies and calculate the probablity of them.
+Brief Description of Goal of Code: To tally the symptoms of a UTI vs. chalmydia and calculate the probablity of having each.
  
-Known Issues: The results page and probability calculations.
+Known Issues: None
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
 -->
@@ -32,27 +31,33 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 
 <script>
-        var allergy_count = 0; //Established variables
-        var cold_count = 0;
+	// The following code lets you know when the file was last modified. I commented it out b/c I did not want alert.
+    //   var docMod = document.lastModified;
+   //    alert("This file last modified  " + docMod);
+  //     console.log("This file last modified  " + docMod);
+
+        var UTI_count = 0; //Established variables
+        var chlamydia_count = 0;
 
 
-        function allergyAdd(){ 
-            allergy_count = allergy_count + 1;
-		//alert(allergy_count);
-//This fuction adds 1 to allergy value
+        function UTIAdd(){ 
+            UTI_count = UTI_count + 1;
+		//alert(UTI_count); did not want alert
+//This fuction adds 1 to UTI value
 } 
-	function coldAdd(){ // this function adds 1 to cold value
+	function chlamydiaAdd(){ // this function adds 1 to cold value
       
-            cold_count = cold_count + 1;
-		//alert(cold_count);
+            chlamydia_count = chlamydia_count + 1;
+		//alert(chlamydia_count); did not want alert
+//This function adds 1 to chlamydia value//
  }
 function resultPercentage() {
-	var allergyPercentage = allergy_count /6 *100; // multiply by 100 for probability
-	//alert(allergyPercentage); // alert box for allergy
-	var coldPercentage = cold_count /6 *100; // multiply by 100 for probability
-	//alert(coldPercentage); // alert box for cold
+	var UTIPercentage = UTI_count /6 *100; // multiply by 100 for probability
+	//alert(UTIPercentage); // alert box for UTI
+	var chlamydiaPercentage = chlamydia_count /6 *100; // multiply by 100 for probability
+	//alert(chlamydiaPercentage); // alert box for chlamydia
 	var resultText = document.getElementById("results");
-	resultText.innerHTML = "Percent it's allergies =" + allergy_count /6 *100 + "<br> Percent it's a cold =" + cold_count /6 *100 ;
+	resultText.innerHTML = "Percent you have a UTI! =" + UTI_count /6 *100 + "<br> Percent you have chlamydia! =" + chlamydia_count /6 *100 ; 
 	//Function shows results of probabilities
 	
 
@@ -63,6 +68,11 @@ function resultPercentage() {
 
 
 <style>	
+   
+	img, object{
+            	max-height:90%;
+        		max-width:90%;
+        	}
 .body {
      margin: 0em;
 }
@@ -86,15 +96,19 @@ function resultPercentage() {
 
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
-	<h1>Cold or Allergies?</h1>
+	<h1>UTI or Chlamydia?</h1> <!--Header for first page-->
 </div>
 	
-<div id="content" class="w3-container">
-	<p>Are you feeling like you might have a cold but wonder if it is allergies. Answer a few short questions to find out!</p>
+<div id="content" class="w3-container"> <!--Indroduction of what the app does-->
+	<p>Are you unsure if you're experiencing a UTI or an STD? Answer a few short questions to find out if you need to get tested!</p>
 	
 	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>
-	
-	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
+	<!--I inserted an image on the first page  of a patient consulting her docotor-->
+	<img src="https://z412l3kad2440am0q34eeh0t-wpengine.netdna-ssl.com/wp-content/uploads/2019/07/life-renew-asking-doctor-questions.jpeg" alt="Girl talking to doctor" width="600" height="300">
+	<!-- This function resizes the image to fit the screen it is opened on-->
+
+ 
+	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 
@@ -103,9 +117,9 @@ function resultPercentage() {
 		<h1>Question 1</h1> 
 		
 	</div>
-	        <p>Are your eyes watery or itchy?</p> <!--Added header-->
-		<a href="#two" onclick="allergyAdd();" class="w3-btn w3-black"> yes </a> <!-- added yes button for question 1-->
-		<a href="#two" onclick="coldAdd();" class="w3-btn w3-black"> no </a> <!-- added no button for question 1 -->
+	        <p>    Are you experiencing foul smelling urine?</p> <!--Added header-->
+		<a href="#two" onclick="UTIAdd();" class="w3-btn w3-black"> yes </a> <!-- added yes button for question 1-->
+		<a href="#two" onclick="chlamydiaAdd();" class="w3-btn w3-black"> no </a> <!-- added no button for question 1 -->
 	</div>
 	
     	<div id="content" class="w3-container"> 
@@ -117,9 +131,9 @@ function resultPercentage() {
 		<h1>Question 2</h1>
 		
 	</div>
-	        <p>Do you have a fever?</p> <!-- added question -->  
-		<a href="#three" onclick="coldAdd();"  class="w3-btn w3-black"> yes </a> <!-- added yes button for question 2, also added cold que -->
-		<a href="#three" onclick="allergyAdd();" class="w3-btn w3-black"> no </a> <!-- added no button for question 2, also added allergy que -->
+	        <p>    Do you have any blisters in the gential area?</p> <!-- added question -->  
+		<a href="#three" onclick="chlamydiaAdd();"  class="w3-btn w3-black"> yes </a> <!-- added yes button for question 2, also added cold que -->
+		<a href="#three" onclick="UTIAdd();" class="w3-btn w3-black"> no </a> <!-- added no button for question 2, also added allergy que -->
 	</div>
 	
 	<div id="content" class="w3-container">
@@ -132,13 +146,13 @@ function resultPercentage() {
 		<h1>Question 3</h1>
 		
 	</div>
-	        <p>Do you have a sore throat?</p> <!-- added question --> 
-		<a href="#four" onclick="coldAdd();"  class="w3-btn w3-black"> yes </a> <!-- added yes button for question 3, also added cold que; fixed que to move to page 3 -->
-		<a href="#four" onclick="allergyAdd();" class="w3-btn w3-black"> no </a> <!-- added no button for question 3, also added allergy que; fixed que to move to page 3 --> 
+	        <p>     Do you have a fever?</p> <!-- added question --> 
+		<a href="#four" onclick="chlamydiaAdd();"  class="w3-btn w3-black"> yes </a> <!-- added yes button for question 3, also added cold que; fixed que to move to page 3 -->
+		<a href="#four" onclick="UTIAdd();" class="w3-btn w3-black"> no </a> <!-- added no button for question 3, also added allergy que; fixed que to move to page 3 --> 
 	</div>
 	
 	<div id="content" class="w3-container">
-	<p></p> <!-- deleted "question 3 here --> 
+	<p></p> 
 	</div>
 </div>
 
@@ -146,13 +160,13 @@ function resultPercentage() {
 	<div id="header" class="w3-container w3-flat-carrot"> <!--Produces header for question 3-->
 		<h1>Question 4</h1>
 </div>
-	        <p>Are your symptoms seasonal or chronic?</p> <!-- added question --> 
-		<a href="#five" onclick="allergyAdd();" class="w3-btn w3-black"> yes </a> <!-- added yes button for question 4, -->
-		<a href="#five" onclick="coldAdd();" class="w3-btn w3-black"> no </a> <!-- added no button for question 4 -->
+	        <p>     Is your urine dark and cloudy?</p> <!-- added question --> 
+		<a href="#five" onclick="UTIAdd();" class="w3-btn w3-black"> yes </a> <!-- added yes button for question 4, -->
+		<a href="#five" onclick="chlamydiaAdd();" class="w3-btn w3-black"> no </a> <!-- added no button for question 4 -->
 	</div>
 	
     	<div id="content" class="w3-container">
-        <p></p>    
+        <p></p> <!-- deleted "question 1 here -->     
     	</div>
 </div>
 
@@ -161,9 +175,9 @@ function resultPercentage() {
 		
 		<h1>Question 5</h1>
 </div>
-	        <p>Have your symptoms lasted for more than 10 days?</p> <!-- added question --> 
-		<a href="#six" onclick="allergyAdd();" class="w3-btn w3-black"> yes </a> <!-- added yes button for question 5 -->
-		<a href="#six" onclick="coldAdd();" class="w3-btn w3-black"> no </a> <!-- added no button for question 5-->
+	        <p>     Do you have an increased urgency to urinate?</p> <!-- added question --> 
+		<a href="#six" onclick="UTIAdd();" class="w3-btn w3-black"> yes </a> <!-- added yes button for question 5 -->
+		<a href="#six" onclick="chlamydiaAdd();" class="w3-btn w3-black"> no </a> <!-- added no button for question 5-->
 	</div>
 	
     	<div id="content" class="w3-container">
@@ -175,9 +189,9 @@ function resultPercentage() {
 	<div id="header" class="w3-container w3-flat-carrot"> <!-- delted portion that wasnt suppose to be there, also added id="header" -->
 		<h1>Question 6</h1>
 </div>
-	        <p>Do you feed achy?</p> <!-- added question --> 
-		<a href="#seven"  onclick="coldAdd();" class="w3-btn w3-black"> yes </a> <!-- added yes button for question 6-->
-		<a href="#seven" onclick="allergyAdd();" class="w3-btn w3-black"> no </a> <!-- added no button for question 6-->
+	        <p>     Are you experiencing pain during intercourse?</p> <!-- added question --> 
+		<a href="#seven"  onclick="chlamydiaAdd();" class="w3-btn w3-black"> yes </a> <!-- added yes button for question 6-->
+		<a href="#seven" onclick="UTIAdd();" class="w3-btn w3-black"> no </a> <!-- added no button for question 6-->
 	</div>
 	
     	<div id="content" class="w3-container">
@@ -190,7 +204,7 @@ function resultPercentage() {
 		
 	</div>
 	      
-		<a href="#eight" onclick="resultPercentage();" class="w3-btn w3-black"> Click here for results. </a> <!-- added results button-->
+		<a href="#eight" onclick="resultPercentage();" class="w3-btn w3-black">   Click here for results.   </a> <!-- added results button-->
 		
 	</div>
 	
@@ -206,6 +220,7 @@ function resultPercentage() {
 	
 	<div id="content" class="w3-container"> 
 		<p id="results">Results Here</p> <!-- this is where the results are --> 
+		
 		
 		
 	</div>
